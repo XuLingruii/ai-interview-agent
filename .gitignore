@@ -1,0 +1,37 @@
+# Environment
+.env
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+*.egg
+.pytest_cache/
+backend/tests/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Runtime data (contains user interviews)
+data/*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+
+# Project brief                                                                                
+interview-agent-brief.md   

@@ -1,0 +1,64 @@
+/* Dark theme (default) */
+:root {
+  --bg: #0f172a;
+  --bg-card: #1e293b;
+  --bg-card-hover: #1e293b;
+  --bg-input: #0f172a;
+  --bg-overlay: rgba(30, 41, 59, 0.8);
+  --border: #334155;
+  --border-accent: rgba(99, 102, 241, 0.3);
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent: #6366f1;
+  --accent-hover: #818cf8;
+  --accent-bg: rgba(99, 102, 241, 0.15);
+  --green: #34d399;
+  --green-bg: rgba(52, 211, 153, 0.15);
+  --amber: #fbbf24;
+  --amber-bg: rgba(251, 191, 36, 0.15);
+  --red: #f87171;
+  --red-bg: rgba(248, 113, 113, 0.15);
+  --red-border: rgba(248, 113, 113, 0.2);
+  --blue: #60a5fa;
+  --purple: #a78bfa;
+  --radius: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+/* Pink-white theme */
+[data-theme="light"] {
+  --bg: #fdf2f8;
+  --bg-card: #ffffff;
+  --bg-card-hover: #fce7f3;
+  --bg-input: #fff1f2;
+  --bg-overlay: rgba(255, 255, 255, 0.9);
+  --border: #fbcfe8;
+  --border-accent: rgba(219, 39, 119, 0.25);
+  --text: #831843;
+  --text-muted: #9d174d;
+  --text-dim: #be185d;
+  --accent: #db2777;
+  --accent-hover: #ec4899;
+  --accent-bg: rgba(219, 39, 119, 0.1);
+  --green: #059669;
+  --green-bg: rgba(5, 150, 105, 0.1);
+  --amber: #d97706;
+  --amber-bg: rgba(217, 119, 6, 0.1);
+  --red: #dc2626;
+  --red-bg: rgba(220, 38, 38, 0.1);
+  --red-border: rgba(220, 38, 38, 0.2);
+  --blue: #2563eb;
+  --purple: #7c3aed;
+}
+
+/* Base styles using variables */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Scrollbar adapts to theme */
+::-webkit-scrollbar-track { background: var(--bg-card); }
+::-webkit-scrollbar-thumb { background: var(--text-dim); }
